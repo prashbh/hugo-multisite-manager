@@ -1,0 +1,1 @@
+# hugo-multisite-generator
