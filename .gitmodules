@@ -1,3 +1,10 @@
 [submodule "themes/LoveIt"]
 	path = themes/LoveIt
 	url = https://github.com/dillonzq/LoveIt
+[submodule "multisite/themes/LoveIt"]
+	path = multisite/themes/LoveIt
+	url = https://github.com/dillonzq/LoveIt
+[submodule "multisite/websites/TheThinkingNobody"]
+	path = multisite/websites/TheThinkingNobody
+	url = git@github.com:prashbh/ttn.git
+	branch = main
