@@ -1,7 +1,11 @@
 # Hugo-multisite-manager
 
+Thanks to all the open source maintainers, contributors & the community for sharing their knowledge.
+
 This repo is built on top of Hugo and lets you manage multiple websites from a single Hugo setup.
 Each website is added as a git submodule and you can publish those websites using either Github Pages or your own deployment scripts.
+
+I used this answer on hugo forum to build this project https://discourse.gohugo.io/t/hugo-multisite-workflow/103/8
 
 ## Instructions
 
