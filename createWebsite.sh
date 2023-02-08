@@ -21,8 +21,7 @@ touch "$multisiteFolderPath/$1/config.toml"
 mkdir "$multisiteFolderPath/$1/content"
 mkdir "$multisiteFolderPath/$1/public"
 
-echo "title = '$1'" >> "$multisiteFolderPath/$1/config.toml"
-
 echo "contentDir = '$websitesFolderName/$1/content'" >> "$multisiteFolderPath/$1/config.toml"
 echo "publishDir = '$websitesFolderName/$1/public'" >> "$multisiteFolderPath/$1/config.toml"
 
+echo "Website created in $multisiteFolderPath/$1"

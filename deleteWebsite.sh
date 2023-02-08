@@ -10,3 +10,5 @@ websitesFolderName="websites"
 multisiteFolderPath="multisite/$websitesFolderName"
 
 git rm "$multisiteFolderPath/$1"
+
+echo "Website $1 deleted"
