@@ -1,6 +1,0 @@
-[submodule "themes/LoveIt"]
-	path = themes/LoveIt
-	url = https://github.com/dillonzq/LoveIt
-[submodule "multisite/themes/LoveIt"]
-	path = multisite/themes/LoveIt
-	url = https://github.com/dillonzq/LoveIt

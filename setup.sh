@@ -15,5 +15,5 @@ echo "Theme installed"
 
 echo "Create container folder \"websites\""
 mkdir websites
-echo "Finished. Run createWebsite to start adding websites"
+echo "Finished. Run createWebsite.sh <website> <repo url> to create a new website"
 #hugo server --config=config.toml,websites/TheThinkingNobody/config.toml -p 12345
