@@ -6,22 +6,23 @@ then
     return 1
 fi
 
-multisiteFolderName="multisite/websites"
-if [ ! -d $multisiteFolderName ] 
+websitesFolderName="websites"
+multisiteFolderPath="multisite/$websitesFolderName"
+if [ ! -d $multisiteFolderPath ] 
 then
-    echo "Directory $multisiteFolderName DOES NOT exists. Run setup.sh first" 
+    echo "Directory $multisiteFolderPath DOES NOT exists. Run setup.sh first" 
     return 1
 fi
 
-git submodule add -b main --force $2 "$multisiteFolderName/$1"
-git submodule update --init "$multisiteFolderName/$1"
+git submodule add -b main $2 "$multisiteFolderPath/$1"
+git submodule update --init "$multisiteFolderPath/$1"
  
-touch "$multisiteFolderName/$1/config.toml"
-mkdir "$multisiteFolderName/$1/content"
-mkdir "$multisiteFolderName/$1/public"
+touch "$multisiteFolderPath/$1/config.toml"
+mkdir "$multisiteFolderPath/$1/content"
+mkdir "$multisiteFolderPath/$1/public"
 
-echo "title = '$1'" >> "$multisiteFolderName/$1/config.toml"
+echo "title = '$1'" >> "$multisiteFolderPath/$1/config.toml"
 
-echo "contentDir = 'websites/$1/content'" >> "$multisiteFolderName/$1/config.toml"
-echo "publishDir = 'websites/$1/public'" >> "$multisiteFolderName/$1/config.toml"
+echo "contentDir = '$websitesFolderName/$1/content'" >> "$multisiteFolderPath/$1/config.toml"
+echo "publishDir = '$websitesFolderName/$1/public'" >> "$multisiteFolderPath/$1/config.toml"
 

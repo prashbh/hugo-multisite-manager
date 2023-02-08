@@ -13,17 +13,7 @@ git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke themes/an
 echo "theme = 'ananke'" >> config.toml
 echo "Theme installed"
 
-#rm -rf content
+echo "Create container folder \"websites\""
 mkdir websites
-#cd websites
-#websitesList=( TheThinkingNobody AProgrammersMind )
-#for i in "${websitesList[@]}"
-#do
-#   : 
-#   mkdir "$i"
-#   touch "$i/config.toml"
-#   mkdir "$i/content"
-#   mkdir "$i/public"
-#done
-#echo "Starting server"
+echo "Finished. Run createWebsite to start adding websites"
 #hugo server --config=config.toml,websites/TheThinkingNobody/config.toml -p 12345
